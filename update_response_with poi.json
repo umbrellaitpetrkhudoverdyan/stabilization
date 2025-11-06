@@ -1,0 +1,52 @@
+{
+  "code": "EC_MC_VALIDATION_FAILED",
+  "context": {
+    "faultSource": 1,
+    "schemaRef": "rosakhutor.camera#/definitions/CAMCameraAPI_update__APIMethodArgs",
+    "report": [
+      {
+        "instancePath": "/0/content/poi",
+        "schemaPath": "#/definitions/UUID/type",
+        "keyword": "type",
+        "params": {
+          "type": "string"
+        },
+        "message": "must be string",
+        "schema": "string",
+        "parentSchema": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "data": [
+          "4e629a58-1a92-47ae-8fe3-639d851060e2"
+        ]
+      }
+    ],
+    "data": [
+      {
+        "uid": "886cc063-7837-4ccf-ab91-a8fe67eedf46",
+        "active": true,
+        "content": {
+          "description": {
+            "ru": "<p>Камера направлена в сторону нижней станции канатной дороги &laquo;Эдельвейс&raquo;, кафе &laquo;Лес&raquo; и выката горнолыжной трассы &laquo;Явор&raquo;. <br />Rosa Khutor mountain resort. 1472m. Ski lift Edelweiss. <br />The camera is directed to the bottom station of chairlift Edelweiss and shows caf&eacute; Les and the finish of the ski piste Yavor.</p>"
+          },
+          "poi": [
+            "4e629a58-1a92-47ae-8fe3-639d851060e2"
+          ]
+        },
+        "name": {
+          "ru": "Горный курорт Роза Хутор. 1472м. Канатная дорога «Эдельвейс»."
+        },
+        "season": null,
+        "tags": null,
+        "seo": {
+          "title": {},
+          "description": {}
+        },
+        "slug": "886cc063-7837-4ccf-ab91-a8fe67eedf46",
+        "targets": null
+      }
+    ]
+  },
+  "message": "Data validation failed"
+}
