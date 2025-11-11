@@ -1,0 +1,59 @@
+{
+    "action": "update",
+    "args": [
+        {
+            "uid": "3170de70-a67f-43af-98d2-dcd1305237cc",
+            "active": true,
+            "content": {
+                "coordinates": [
+                    54.573067,
+                    39.643821
+                ],
+                "kindSpecificData": {
+                    "kind": "ski-lift",
+                    "elements": {},
+                    "scheduleTemplate": {}
+                }
+            },
+            "creator": "98997bfb-4826-45e0-b2d8-10dddad8e648",
+            "kind": "ski-lift",
+            "labels": null,
+            "name": {
+                "en": "TRAINING SLOPE 2 (Down)",
+                "ru": "Учебный склон 2 (верх)"
+            },
+            "season": null,
+            "tags": null,
+            "seo": null,
+            "slug": "poi-3170de70-a67f-43af-98d2-dcd1305237cc",
+            "system": false,
+            "targets": null,
+            "validity": null,
+            "data": {
+                "uid": "e117b4f3-b883-4f5a-8412-402860ceef48",
+                "data": {
+                    "kind": "ski-lift",
+                    "name": {
+                        "en": "TRAINING SLOPE 2 (Down)",
+                        "ru": "Учебный склон 2 (верх)"
+                    },
+                    "state": "OO",
+                    "season": "winter",
+                    "liftType": "TR",
+                    "stateNote": "",
+                    "openingTimes": {},
+                    "lastAscentTimes": {},
+                    "scheduleComment": {
+                        "de": "возобновит работу в следующем горнолыжном сезоне",
+                        "en": "возобновит работу в следующем горнолыжном сезоне",
+                        "ru": "возобновит работу в следующем горнолыжном сезоне"
+                    },
+                    "lastDescentTimes": {},
+                    "showIssueMessage": false,
+                    "showScheduleComment": true
+                },
+                "providerId": "skiplan"
+            }
+        }
+    ]
+}

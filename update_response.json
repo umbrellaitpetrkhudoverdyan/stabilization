@@ -1,0 +1,1716 @@
+{
+  "code": "EC_MC_VALIDATION_FAILED",
+  "context": {
+    "faultSource": 1,
+    "schemaRef": "rosakhutor.map#/definitions/MapPointOfInterestAPI_update__APIMethodArgs",
+    "report": [
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentLocation/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "elements"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "location",
+              "enumMember": {
+                "title": "Location",
+                "note": "Локация (Роза Пик, Гора Эльбрус, Гора Белуха)",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Локация (Роза Пик, Гора Эльбрус, Гора Белуха)"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentLocation/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "scheduleTemplate"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "location",
+              "enumMember": {
+                "title": "Location",
+                "note": "Локация (Роза Пик, Гора Эльбрус, Гора Белуха)",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Локация (Роза Пик, Гора Эльбрус, Гора Белуха)"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData/kind",
+        "schemaPath": "#/definitions/MapPointOfInterestContentLocation/properties/kind/const",
+        "keyword": "const",
+        "params": {
+          "allowedValue": "location"
+        },
+        "message": "must be equal to constant",
+        "schema": "location",
+        "parentSchema": {
+          "type": "string",
+          "const": "location",
+          "enumMember": {
+            "title": "Location",
+            "note": "Локация (Роза Пик, Гора Эльбрус, Гора Белуха)",
+            "enum": "MapPointOfInterestKind"
+          },
+          "description": "Локация (Роза Пик, Гора Эльбрус, Гора Белуха)"
+        },
+        "data": "ski-lift"
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData/elements",
+        "schemaPath": "#/required",
+        "keyword": "required",
+        "params": {
+          "missingProperty": "higherStation"
+        },
+        "message": "must have required property 'higherStation'",
+        "schema": [
+          "higherStation",
+          "lowerStation"
+        ],
+        "parentSchema": {
+          "additionalProperties": false,
+          "description": "Составные элементы подъемника",
+          "properties": {
+            "higherStation": {
+              "$ref": "#/definitions/MapPointOfInterestID",
+              "description": "Верхняя точка (POI вида SkiLiftStation)."
+            },
+            "lowerStation": {
+              "$ref": "#/definitions/MapPointOfInterestID",
+              "description": "Нижняя точка (POI вида SkiLiftStation)"
+            }
+          },
+          "required": [
+            "higherStation",
+            "lowerStation"
+          ],
+          "type": "object"
+        },
+        "data": {}
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData/elements",
+        "schemaPath": "#/required",
+        "keyword": "required",
+        "params": {
+          "missingProperty": "lowerStation"
+        },
+        "message": "must have required property 'lowerStation'",
+        "schema": [
+          "higherStation",
+          "lowerStation"
+        ],
+        "parentSchema": {
+          "additionalProperties": false,
+          "description": "Составные элементы подъемника",
+          "properties": {
+            "higherStation": {
+              "$ref": "#/definitions/MapPointOfInterestID",
+              "description": "Верхняя точка (POI вида SkiLiftStation)."
+            },
+            "lowerStation": {
+              "$ref": "#/definitions/MapPointOfInterestID",
+              "description": "Нижняя точка (POI вида SkiLiftStation)"
+            }
+          },
+          "required": [
+            "higherStation",
+            "lowerStation"
+          ],
+          "type": "object"
+        },
+        "data": {}
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentTrailGroup/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "elements"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "trail-group",
+              "enumMember": {
+                "title": "TrailGroup",
+                "note": "Группа трасс/троп",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Группа трасс/троп"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentTrailGroup/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "scheduleTemplate"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "trail-group",
+              "enumMember": {
+                "title": "TrailGroup",
+                "note": "Группа трасс/троп",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Группа трасс/троп"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData/kind",
+        "schemaPath": "#/definitions/MapPointOfInterestContentTrailGroup/properties/kind/const",
+        "keyword": "const",
+        "params": {
+          "allowedValue": "trail-group"
+        },
+        "message": "must be equal to constant",
+        "schema": "trail-group",
+        "parentSchema": {
+          "type": "string",
+          "const": "trail-group",
+          "enumMember": {
+            "title": "TrailGroup",
+            "note": "Группа трасс/троп",
+            "enum": "MapPointOfInterestKind"
+          },
+          "description": "Группа трасс/троп"
+        },
+        "data": "ski-lift"
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "elements"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "ski-trail",
+              "enumMember": {
+                "title": "SkiTrail",
+                "note": "Горнолыжная трасса",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Горнолыжная трасса"
+            },
+            "scheduleTemplate": {
+              "$ref": "#/definitions/MultilanguageHTML"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData/kind",
+        "schemaPath": "#/properties/kind/const",
+        "keyword": "const",
+        "params": {
+          "allowedValue": "ski-trail"
+        },
+        "message": "must be equal to constant",
+        "schema": "ski-trail",
+        "parentSchema": {
+          "type": "string",
+          "const": "ski-trail",
+          "enumMember": {
+            "title": "SkiTrail",
+            "note": "Горнолыжная трасса",
+            "enum": "MapPointOfInterestKind"
+          },
+          "description": "Горнолыжная трасса"
+        },
+        "data": "ski-lift"
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentHikingTrail/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "elements"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "hiking-trail",
+              "enumMember": {
+                "title": "HikingTrail",
+                "note": "Пешая тропа",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Пешая тропа"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentHikingTrail/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "scheduleTemplate"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "hiking-trail",
+              "enumMember": {
+                "title": "HikingTrail",
+                "note": "Пешая тропа",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Пешая тропа"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData/kind",
+        "schemaPath": "#/definitions/MapPointOfInterestContentHikingTrail/properties/kind/const",
+        "keyword": "const",
+        "params": {
+          "allowedValue": "hiking-trail"
+        },
+        "message": "must be equal to constant",
+        "schema": "hiking-trail",
+        "parentSchema": {
+          "type": "string",
+          "const": "hiking-trail",
+          "enumMember": {
+            "title": "HikingTrail",
+            "note": "Пешая тропа",
+            "enum": "MapPointOfInterestKind"
+          },
+          "description": "Пешая тропа"
+        },
+        "data": "ski-lift"
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentHotel/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "elements"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "hotel",
+              "enumMember": {
+                "title": "Hotel",
+                "note": "Отель",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Отель"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentHotel/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "scheduleTemplate"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "hotel",
+              "enumMember": {
+                "title": "Hotel",
+                "note": "Отель",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Отель"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData/kind",
+        "schemaPath": "#/definitions/MapPointOfInterestContentHotel/properties/kind/const",
+        "keyword": "const",
+        "params": {
+          "allowedValue": "hotel"
+        },
+        "message": "must be equal to constant",
+        "schema": "hotel",
+        "parentSchema": {
+          "type": "string",
+          "const": "hotel",
+          "enumMember": {
+            "title": "Hotel",
+            "note": "Отель",
+            "enum": "MapPointOfInterestKind"
+          },
+          "description": "Отель"
+        },
+        "data": "ski-lift"
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentDiningOption/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "elements"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "dining-option",
+              "enumMember": {
+                "title": "DiningOption",
+                "note": "Место питания",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Место питания"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentDiningOption/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "scheduleTemplate"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "dining-option",
+              "enumMember": {
+                "title": "DiningOption",
+                "note": "Место питания",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Место питания"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData/kind",
+        "schemaPath": "#/definitions/MapPointOfInterestContentDiningOption/properties/kind/const",
+        "keyword": "const",
+        "params": {
+          "allowedValue": "dining-option"
+        },
+        "message": "must be equal to constant",
+        "schema": "dining-option",
+        "parentSchema": {
+          "type": "string",
+          "const": "dining-option",
+          "enumMember": {
+            "title": "DiningOption",
+            "note": "Место питания",
+            "enum": "MapPointOfInterestKind"
+          },
+          "description": "Место питания"
+        },
+        "data": "ski-lift"
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentBar/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "elements"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "bar",
+              "enumMember": {
+                "title": "Bar",
+                "note": "Бар",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Бар"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentBar/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "scheduleTemplate"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "bar",
+              "enumMember": {
+                "title": "Bar",
+                "note": "Бар",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Бар"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData/kind",
+        "schemaPath": "#/definitions/MapPointOfInterestContentBar/properties/kind/const",
+        "keyword": "const",
+        "params": {
+          "allowedValue": "bar"
+        },
+        "message": "must be equal to constant",
+        "schema": "bar",
+        "parentSchema": {
+          "type": "string",
+          "const": "bar",
+          "enumMember": {
+            "title": "Bar",
+            "note": "Бар",
+            "enum": "MapPointOfInterestKind"
+          },
+          "description": "Бар"
+        },
+        "data": "ski-lift"
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentShopping/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "elements"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "shopping",
+              "enumMember": {
+                "title": "Shopping",
+                "note": "Шопинг (магазины, торговые центы, рынки)",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Шопинг (магазины, торговые центы, рынки)"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentShopping/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "scheduleTemplate"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "shopping",
+              "enumMember": {
+                "title": "Shopping",
+                "note": "Шопинг (магазины, торговые центы, рынки)",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Шопинг (магазины, торговые центы, рынки)"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData/kind",
+        "schemaPath": "#/definitions/MapPointOfInterestContentShopping/properties/kind/const",
+        "keyword": "const",
+        "params": {
+          "allowedValue": "shopping"
+        },
+        "message": "must be equal to constant",
+        "schema": "shopping",
+        "parentSchema": {
+          "type": "string",
+          "const": "shopping",
+          "enumMember": {
+            "title": "Shopping",
+            "note": "Шопинг (магазины, торговые центы, рынки)",
+            "enum": "MapPointOfInterestKind"
+          },
+          "description": "Шопинг (магазины, торговые центы, рынки)"
+        },
+        "data": "ski-lift"
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentHealthAndBeauty/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "elements"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "health-and-beauty",
+              "enumMember": {
+                "title": "HealthAndBeauty",
+                "note": "Красота и здоровье (салоны красоты, спа, массажи)",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Красота и здоровье (салоны красоты, спа, массажи)"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentHealthAndBeauty/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "scheduleTemplate"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "health-and-beauty",
+              "enumMember": {
+                "title": "HealthAndBeauty",
+                "note": "Красота и здоровье (салоны красоты, спа, массажи)",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Красота и здоровье (салоны красоты, спа, массажи)"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData/kind",
+        "schemaPath": "#/definitions/MapPointOfInterestContentHealthAndBeauty/properties/kind/const",
+        "keyword": "const",
+        "params": {
+          "allowedValue": "health-and-beauty"
+        },
+        "message": "must be equal to constant",
+        "schema": "health-and-beauty",
+        "parentSchema": {
+          "type": "string",
+          "const": "health-and-beauty",
+          "enumMember": {
+            "title": "HealthAndBeauty",
+            "note": "Красота и здоровье (салоны красоты, спа, массажи)",
+            "enum": "MapPointOfInterestKind"
+          },
+          "description": "Красота и здоровье (салоны красоты, спа, массажи)"
+        },
+        "data": "ski-lift"
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentEntertainment/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "elements"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "entertainment",
+              "enumMember": {
+                "title": "Entertainment",
+                "note": "Развлечения (аттракционы, парки, клубы, точки проведения мероприятий)",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Развлечения (аттракционы, парки, клубы, точки проведения мероприятий)"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentEntertainment/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "scheduleTemplate"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "entertainment",
+              "enumMember": {
+                "title": "Entertainment",
+                "note": "Развлечения (аттракционы, парки, клубы, точки проведения мероприятий)",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Развлечения (аттракционы, парки, клубы, точки проведения мероприятий)"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData/kind",
+        "schemaPath": "#/definitions/MapPointOfInterestContentEntertainment/properties/kind/const",
+        "keyword": "const",
+        "params": {
+          "allowedValue": "entertainment"
+        },
+        "message": "must be equal to constant",
+        "schema": "entertainment",
+        "parentSchema": {
+          "type": "string",
+          "const": "entertainment",
+          "enumMember": {
+            "title": "Entertainment",
+            "note": "Развлечения (аттракционы, парки, клубы, точки проведения мероприятий)",
+            "enum": "MapPointOfInterestKind"
+          },
+          "description": "Развлечения (аттракционы, парки, клубы, точки проведения мероприятий)"
+        },
+        "data": "ski-lift"
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentLivecam/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "elements"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "livecam",
+              "enumMember": {
+                "title": "Livecam",
+                "note": "Онлайн-камеры",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Онлайн-камеры"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentLivecam/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "scheduleTemplate"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "livecam",
+              "enumMember": {
+                "title": "Livecam",
+                "note": "Онлайн-камеры",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Онлайн-камеры"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData/kind",
+        "schemaPath": "#/definitions/MapPointOfInterestContentLivecam/properties/kind/const",
+        "keyword": "const",
+        "params": {
+          "allowedValue": "livecam"
+        },
+        "message": "must be equal to constant",
+        "schema": "livecam",
+        "parentSchema": {
+          "type": "string",
+          "const": "livecam",
+          "enumMember": {
+            "title": "Livecam",
+            "note": "Онлайн-камеры",
+            "enum": "MapPointOfInterestKind"
+          },
+          "description": "Онлайн-камеры"
+        },
+        "data": "ski-lift"
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentResortService/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "elements"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "resort-service",
+              "enumMember": {
+                "title": "ResortService",
+                "note": "Сервисы курорта",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Сервисы курорта"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentResortService/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "scheduleTemplate"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "resort-service",
+              "enumMember": {
+                "title": "ResortService",
+                "note": "Сервисы курорта",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Сервисы курорта"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData/kind",
+        "schemaPath": "#/definitions/MapPointOfInterestContentResortService/properties/kind/const",
+        "keyword": "const",
+        "params": {
+          "allowedValue": "resort-service"
+        },
+        "message": "must be equal to constant",
+        "schema": "resort-service",
+        "parentSchema": {
+          "type": "string",
+          "const": "resort-service",
+          "enumMember": {
+            "title": "ResortService",
+            "note": "Сервисы курорта",
+            "enum": "MapPointOfInterestKind"
+          },
+          "description": "Сервисы курорта"
+        },
+        "data": "ski-lift"
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentCommon/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "elements"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "common",
+              "enumMember": {
+                "title": "Common",
+                "note": "Точка общего назначения",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Точка общего назначения"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentCommon/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "scheduleTemplate"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "common",
+              "enumMember": {
+                "title": "Common",
+                "note": "Точка общего назначения",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Точка общего назначения"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData/kind",
+        "schemaPath": "#/definitions/MapPointOfInterestContentCommon/properties/kind/const",
+        "keyword": "const",
+        "params": {
+          "allowedValue": "common"
+        },
+        "message": "must be equal to constant",
+        "schema": "common",
+        "parentSchema": {
+          "type": "string",
+          "const": "common",
+          "enumMember": {
+            "title": "Common",
+            "note": "Точка общего назначения",
+            "enum": "MapPointOfInterestKind"
+          },
+          "description": "Точка общего назначения"
+        },
+        "data": "ski-lift"
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentSkiLiftStation/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "elements"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "ski-lift-station",
+              "enumMember": {
+                "title": "SkiLiftStation",
+                "note": "СКД: Станция канатной дороги",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "СКД: Станция канатной дороги"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentSkiLiftStation/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "scheduleTemplate"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "ski-lift-station",
+              "enumMember": {
+                "title": "SkiLiftStation",
+                "note": "СКД: Станция канатной дороги",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "СКД: Станция канатной дороги"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData/kind",
+        "schemaPath": "#/definitions/MapPointOfInterestContentSkiLiftStation/properties/kind/const",
+        "keyword": "const",
+        "params": {
+          "allowedValue": "ski-lift-station"
+        },
+        "message": "must be equal to constant",
+        "schema": "ski-lift-station",
+        "parentSchema": {
+          "type": "string",
+          "const": "ski-lift-station",
+          "enumMember": {
+            "title": "SkiLiftStation",
+            "note": "СКД: Станция канатной дороги",
+            "enum": "MapPointOfInterestKind"
+          },
+          "description": "СКД: Станция канатной дороги"
+        },
+        "data": "ski-lift"
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentInfrastructure/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "elements"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "infrastructure",
+              "enumMember": {
+                "title": "Infrastructure",
+                "note": "Объект инфраструктуры",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Объект инфраструктуры"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/definitions/MapPointOfInterestContentInfrastructure/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "scheduleTemplate"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "infrastructure",
+              "enumMember": {
+                "title": "Infrastructure",
+                "note": "Объект инфраструктуры",
+                "enum": "MapPointOfInterestKind"
+              },
+              "description": "Объект инфраструктуры"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "type": "object"
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData/kind",
+        "schemaPath": "#/definitions/MapPointOfInterestContentInfrastructure/properties/kind/const",
+        "keyword": "const",
+        "params": {
+          "allowedValue": "infrastructure"
+        },
+        "message": "must be equal to constant",
+        "schema": "infrastructure",
+        "parentSchema": {
+          "type": "string",
+          "const": "infrastructure",
+          "enumMember": {
+            "title": "Infrastructure",
+            "note": "Объект инфраструктуры",
+            "enum": "MapPointOfInterestKind"
+          },
+          "description": "Объект инфраструктуры"
+        },
+        "data": "ski-lift"
+      },
+      {
+        "instancePath": "/0/content/kindSpecificData",
+        "schemaPath": "#/anyOf",
+        "keyword": "anyOf",
+        "params": {},
+        "message": "must match a schema in anyOf",
+        "schema": [
+          {
+            "$ref": "#/definitions/MapPointOfInterestContentLocation"
+          },
+          {
+            "$ref": "#/definitions/MapPointOfInterestContentSkiLift"
+          },
+          {
+            "$ref": "#/definitions/MapPointOfInterestContentTrailGroup"
+          },
+          {
+            "$ref": "#/definitions/MapPointOfInterestContentSkiTrail"
+          },
+          {
+            "$ref": "#/definitions/MapPointOfInterestContentHikingTrail"
+          },
+          {
+            "$ref": "#/definitions/MapPointOfInterestContentHotel"
+          },
+          {
+            "$ref": "#/definitions/MapPointOfInterestContentDiningOption"
+          },
+          {
+            "$ref": "#/definitions/MapPointOfInterestContentBar"
+          },
+          {
+            "$ref": "#/definitions/MapPointOfInterestContentShopping"
+          },
+          {
+            "$ref": "#/definitions/MapPointOfInterestContentHealthAndBeauty"
+          },
+          {
+            "$ref": "#/definitions/MapPointOfInterestContentEntertainment"
+          },
+          {
+            "$ref": "#/definitions/MapPointOfInterestContentLivecam"
+          },
+          {
+            "$ref": "#/definitions/MapPointOfInterestContentResortService"
+          },
+          {
+            "$ref": "#/definitions/MapPointOfInterestContentCommon"
+          },
+          {
+            "$ref": "#/definitions/MapPointOfInterestContentSkiLiftStation"
+          },
+          {
+            "$ref": "#/definitions/MapPointOfInterestContentInfrastructure"
+          }
+        ],
+        "parentSchema": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/MapPointOfInterestContentLocation"
+            },
+            {
+              "$ref": "#/definitions/MapPointOfInterestContentSkiLift"
+            },
+            {
+              "$ref": "#/definitions/MapPointOfInterestContentTrailGroup"
+            },
+            {
+              "$ref": "#/definitions/MapPointOfInterestContentSkiTrail"
+            },
+            {
+              "$ref": "#/definitions/MapPointOfInterestContentHikingTrail"
+            },
+            {
+              "$ref": "#/definitions/MapPointOfInterestContentHotel"
+            },
+            {
+              "$ref": "#/definitions/MapPointOfInterestContentDiningOption"
+            },
+            {
+              "$ref": "#/definitions/MapPointOfInterestContentBar"
+            },
+            {
+              "$ref": "#/definitions/MapPointOfInterestContentShopping"
+            },
+            {
+              "$ref": "#/definitions/MapPointOfInterestContentHealthAndBeauty"
+            },
+            {
+              "$ref": "#/definitions/MapPointOfInterestContentEntertainment"
+            },
+            {
+              "$ref": "#/definitions/MapPointOfInterestContentLivecam"
+            },
+            {
+              "$ref": "#/definitions/MapPointOfInterestContentResortService"
+            },
+            {
+              "$ref": "#/definitions/MapPointOfInterestContentCommon"
+            },
+            {
+              "$ref": "#/definitions/MapPointOfInterestContentSkiLiftStation"
+            },
+            {
+              "$ref": "#/definitions/MapPointOfInterestContentInfrastructure"
+            }
+          ],
+          "description": "Map: Поля, специфичные для вида точки интереса."
+        },
+        "data": {
+          "kind": "ski-lift",
+          "elements": {},
+          "scheduleTemplate": {}
+        }
+      },
+      {
+        "instancePath": "/0/data",
+        "schemaPath": "#/properties/data/anyOf/0/type",
+        "keyword": "type",
+        "params": {
+          "type": "null"
+        },
+        "message": "must be null",
+        "schema": "null",
+        "parentSchema": {
+          "type": "null"
+        },
+        "data": {
+          "uid": "e117b4f3-b883-4f5a-8412-402860ceef48",
+          "data": {
+            "kind": "ski-lift",
+            "name": {
+              "en": "TRAINING SLOPE 2 (Down)",
+              "ru": "Учебный склон 2 (верх)"
+            },
+            "state": "OO",
+            "season": "winter",
+            "liftType": "TR",
+            "stateNote": "",
+            "openingTimes": {},
+            "lastAscentTimes": {},
+            "scheduleComment": {
+              "de": "возобновит работу в следующем горнолыжном сезоне",
+              "en": "возобновит работу в следующем горнолыжном сезоне",
+              "ru": "возобновит работу в следующем горнолыжном сезоне"
+            },
+            "lastDescentTimes": {},
+            "showIssueMessage": false,
+            "showScheduleComment": true
+          },
+          "providerId": "skiplan"
+        }
+      },
+      {
+        "instancePath": "/0/data",
+        "schemaPath": "#/properties/data/anyOf/1/additionalProperties",
+        "keyword": "additionalProperties",
+        "params": {
+          "additionalProperty": "data"
+        },
+        "message": "must NOT have additional properties",
+        "schema": false,
+        "parentSchema": {
+          "type": "object",
+          "properties": {
+            "providerId": {
+              "$ref": "#/definitions/SkiplanProviderId"
+            },
+            "uid": {
+              "$ref": "#/definitions/UUID"
+            }
+          },
+          "required": [
+            "providerId",
+            "uid"
+          ],
+          "additionalProperties": false
+        },
+        "data": {
+          "uid": "e117b4f3-b883-4f5a-8412-402860ceef48",
+          "data": {
+            "kind": "ski-lift",
+            "name": {
+              "en": "TRAINING SLOPE 2 (Down)",
+              "ru": "Учебный склон 2 (верх)"
+            },
+            "state": "OO",
+            "season": "winter",
+            "liftType": "TR",
+            "stateNote": "",
+            "openingTimes": {},
+            "lastAscentTimes": {},
+            "scheduleComment": {
+              "de": "возобновит работу в следующем горнолыжном сезоне",
+              "en": "возобновит работу в следующем горнолыжном сезоне",
+              "ru": "возобновит работу в следующем горнолыжном сезоне"
+            },
+            "lastDescentTimes": {},
+            "showIssueMessage": false,
+            "showScheduleComment": true
+          },
+          "providerId": "skiplan"
+        }
+      },
+      {
+        "instancePath": "/0/data",
+        "schemaPath": "#/properties/data/anyOf",
+        "keyword": "anyOf",
+        "params": {},
+        "message": "must match a schema in anyOf",
+        "schema": [
+          {
+            "type": "null"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "providerId": {
+                "$ref": "#/definitions/SkiplanProviderId"
+              },
+              "uid": {
+                "$ref": "#/definitions/UUID"
+              }
+            },
+            "required": [
+              "providerId",
+              "uid"
+            ],
+            "additionalProperties": false
+          }
+        ],
+        "parentSchema": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "properties": {
+                "providerId": {
+                  "$ref": "#/definitions/SkiplanProviderId"
+                },
+                "uid": {
+                  "$ref": "#/definitions/UUID"
+                }
+              },
+              "required": [
+                "providerId",
+                "uid"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        },
+        "data": {
+          "uid": "e117b4f3-b883-4f5a-8412-402860ceef48",
+          "data": {
+            "kind": "ski-lift",
+            "name": {
+              "en": "TRAINING SLOPE 2 (Down)",
+              "ru": "Учебный склон 2 (верх)"
+            },
+            "state": "OO",
+            "season": "winter",
+            "liftType": "TR",
+            "stateNote": "",
+            "openingTimes": {},
+            "lastAscentTimes": {},
+            "scheduleComment": {
+              "de": "возобновит работу в следующем горнолыжном сезоне",
+              "en": "возобновит работу в следующем горнолыжном сезоне",
+              "ru": "возобновит работу в следующем горнолыжном сезоне"
+            },
+            "lastDescentTimes": {},
+            "showIssueMessage": false,
+            "showScheduleComment": true
+          },
+          "providerId": "skiplan"
+        }
+      }
+    ],
+    "data": [
+      {
+        "uid": "3170de70-a67f-43af-98d2-dcd1305237cc",
+        "active": true,
+        "content": {
+          "coordinates": [
+            54.573067,
+            39.643821
+          ],
+          "kindSpecificData": {
+            "kind": "ski-lift",
+            "elements": {},
+            "scheduleTemplate": {}
+          }
+        },
+        "creator": "98997bfb-4826-45e0-b2d8-10dddad8e648",
+        "kind": "ski-lift",
+        "labels": null,
+        "name": {
+          "en": "TRAINING SLOPE 2 (Down)",
+          "ru": "Учебный склон 2 (верх)"
+        },
+        "season": null,
+        "tags": null,
+        "seo": null,
+        "slug": "poi-3170de70-a67f-43af-98d2-dcd1305237cc",
+        "system": false,
+        "targets": null,
+        "validity": null,
+        "data": {
+          "uid": "e117b4f3-b883-4f5a-8412-402860ceef48",
+          "data": {
+            "kind": "ski-lift",
+            "name": {
+              "en": "TRAINING SLOPE 2 (Down)",
+              "ru": "Учебный склон 2 (верх)"
+            },
+            "state": "OO",
+            "season": "winter",
+            "liftType": "TR",
+            "stateNote": "",
+            "openingTimes": {},
+            "lastAscentTimes": {},
+            "scheduleComment": {
+              "de": "возобновит работу в следующем горнолыжном сезоне",
+              "en": "возобновит работу в следующем горнолыжном сезоне",
+              "ru": "возобновит работу в следующем горнолыжном сезоне"
+            },
+            "lastDescentTimes": {},
+            "showIssueMessage": false,
+            "showScheduleComment": true
+          },
+          "providerId": "skiplan"
+        }
+      }
+    ]
+  },
+  "message": "Data validation failed"
+}
