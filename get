@@ -1,0 +1,17 @@
+POST /api/mas/gw/main/cms/promotion:get HTTP/1.1
+Host: dev.stage.rosakhutor.ru
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwMTlhNzZkMC0wZWUyLTc0YTktOWNkYy1kYzFkOTFjMTExZGUiLCJjbHMiOiJ1Iiwic3ViIjoiMjI3Njc4OGMtMmY4Ny00ZmQxLWI2NzgtOGMyZjg3YWZkMWE5IiwicmV2IjozLCJhdHQiOiJHMSIsInBpZCI6InBsYWluIiwiYXV0aG9yaXR5IjoiZGV2LnN1bSIsImVudiI6ImRldmVsb3BtZW50IiwiZXhwIjo3Nzc2MDAwMDAwLjAsImlzcyI6Im9hczpyb3Nha2h1dG9yLW1hcy9kZXYiLCJpdGlkIjoiMDE5YTc2ZDAtMGVlMS03NjRmLWFkZWItNGVjOWRjYjQzNTFhIiwiaWF0IjoxNzYyOTI5OTM4fQ.RXEmgs6VSg3KSv8YYNRGw6312q0cvkSBHHMJvy-j3TM
+Content-Length: 133
+
+{
+    "action": "get",
+    "args": 
+    [
+        [
+            
+            "97db0bf6-e276-4270-8629-14f0da1cefe7"
+        ]
+    ]
+}

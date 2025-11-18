@@ -1,0 +1,722 @@
+{
+    "code": "EC_MC_VALIDATION_FAILED",
+    "context": {
+        "faultSource": 2,
+        "schemaRef": "rosakhutor.cms#/definitions/CMSPromotionAPI_getAll__APIMethodResult",
+        "report": [
+            {
+                "instancePath": "/1/content/price",
+                "schemaPath": "#/type",
+                "keyword": "type",
+                "params": {
+                    "type": "object"
+                },
+                "message": "must be object",
+                "schema": "object",
+                "parentSchema": {
+                    "additionalProperties": false,
+                    "description": "Определение денежной суммы с (только) абсолютным значением.",
+                    "properties": {
+                        "value": {
+                            "$ref": "#/definitions/MoneyValue",
+                            "description": "Значение"
+                        },
+                        "boundary": {
+                            "$ref": "#/definitions/MoneyValueBoundary",
+                            "description": "Граница",
+                            "default": "exact"
+                        }
+                    },
+                    "required": [
+                        "value"
+                    ],
+                    "type": "object"
+                },
+                "data": null
+            },
+            {
+                "instancePath": "/1/content/discount",
+                "schemaPath": "#/type",
+                "keyword": "type",
+                "params": {
+                    "type": "object"
+                },
+                "message": "must be object",
+                "schema": "object",
+                "parentSchema": {
+                    "additionalProperties": false,
+                    "description": "Определение денежной суммы.",
+                    "properties": {
+                        "value": {
+                            "$ref": "#/definitions/MoneyValue",
+                            "description": "Значение"
+                        },
+                        "boundary": {
+                            "$ref": "#/definitions/MoneyValueBoundary",
+                            "description": "Граница",
+                            "default": "exact"
+                        },
+                        "kind": {
+                            "$ref": "#/definitions/MoneyValueKind",
+                            "description": "Вид суммы",
+                            "default": "abs"
+                        }
+                    },
+                    "required": [
+                        "value"
+                    ],
+                    "type": "object"
+                },
+                "data": null
+            },
+            {
+                "instancePath": "/2/content/price",
+                "schemaPath": "#/type",
+                "keyword": "type",
+                "params": {
+                    "type": "object"
+                },
+                "message": "must be object",
+                "schema": "object",
+                "parentSchema": {
+                    "additionalProperties": false,
+                    "description": "Определение денежной суммы с (только) абсолютным значением.",
+                    "properties": {
+                        "value": {
+                            "$ref": "#/definitions/MoneyValue",
+                            "description": "Значение"
+                        },
+                        "boundary": {
+                            "$ref": "#/definitions/MoneyValueBoundary",
+                            "description": "Граница",
+                            "default": "exact"
+                        }
+                    },
+                    "required": [
+                        "value"
+                    ],
+                    "type": "object"
+                },
+                "data": null
+            },
+            {
+                "instancePath": "/2/content/discount/kind",
+                "schemaPath": "#/definitions/MoneyValueKind/type",
+                "keyword": "type",
+                "params": {
+                    "type": "string"
+                },
+                "message": "must be string",
+                "schema": "string",
+                "parentSchema": {
+                    "description": "Значение, определяющее вид денежной суммы:   - abs - абсолютная сумма (например, 1000)   - rel - относительная сумма (например, 10% от суммы заказа)",
+                    "enum": [
+                        "abs",
+                        "rel"
+                    ],
+                    "type": "string"
+                },
+                "data": null
+            },
+            {
+                "instancePath": "/2/content/discount/kind",
+                "schemaPath": "#/definitions/MoneyValueKind/enum",
+                "keyword": "enum",
+                "params": {
+                    "allowedValues": [
+                        "abs",
+                        "rel"
+                    ]
+                },
+                "message": "must be equal to one of the allowed values",
+                "schema": [
+                    "abs",
+                    "rel"
+                ],
+                "parentSchema": {
+                    "description": "Значение, определяющее вид денежной суммы:   - abs - абсолютная сумма (например, 1000)   - rel - относительная сумма (например, 10% от суммы заказа)",
+                    "enum": [
+                        "abs",
+                        "rel"
+                    ],
+                    "type": "string"
+                },
+                "data": null
+            },
+            {
+                "instancePath": "/3/content/discount/kind",
+                "schemaPath": "#/definitions/MoneyValueKind/type",
+                "keyword": "type",
+                "params": {
+                    "type": "string"
+                },
+                "message": "must be string",
+                "schema": "string",
+                "parentSchema": {
+                    "description": "Значение, определяющее вид денежной суммы:   - abs - абсолютная сумма (например, 1000)   - rel - относительная сумма (например, 10% от суммы заказа)",
+                    "enum": [
+                        "abs",
+                        "rel"
+                    ],
+                    "type": "string"
+                },
+                "data": null
+            },
+            {
+                "instancePath": "/3/content/discount/kind",
+                "schemaPath": "#/definitions/MoneyValueKind/enum",
+                "keyword": "enum",
+                "params": {
+                    "allowedValues": [
+                        "abs",
+                        "rel"
+                    ]
+                },
+                "message": "must be equal to one of the allowed values",
+                "schema": [
+                    "abs",
+                    "rel"
+                ],
+                "parentSchema": {
+                    "description": "Значение, определяющее вид денежной суммы:   - abs - абсолютная сумма (например, 1000)   - rel - относительная сумма (например, 10% от суммы заказа)",
+                    "enum": [
+                        "abs",
+                        "rel"
+                    ],
+                    "type": "string"
+                },
+                "data": null
+            }
+        ],
+        "data": [
+            {
+                "content": {
+                    "price": {
+                        "value": 1000,
+                        "boundary": "min"
+                    },
+                    "title": {
+                        "ru": "Роза бонус",
+                        "ta": "Увеличенный Ски-Пас"
+                    },
+                    "action": {
+                        "url": "https://rosakhutor.ru/",
+                        "kind": "nav:url",
+                        "text": {
+                            "en": "Enroll in courses",
+                            "ru": "Подробнее",
+                            "ta": "Enroll in courses "
+                        },
+                        "target": "ext"
+                    },
+                    "gallery": [
+                        {
+                            "raw": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/35f4abf9e6ba6afb75d3d7909d2c94a6-r1UclR-original.webp",
+                            "variants": {
+                                "mobile": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/35f4abf9e6ba6afb75d3d7909d2c94a6-vGKVG8-mobile.webp",
+                                "retina": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/35f4abf9e6ba6afb75d3d7909d2c94a6-vGKVG8-retina.webp",
+                                "tablet": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/35f4abf9e6ba6afb75d3d7909d2c94a6-vGKVG8-tablet.webp",
+                                "desktop": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/35f4abf9e6ba6afb75d3d7909d2c94a6-vGKVG8-desktop.webp"
+                            }
+                        },
+                        {
+                            "raw": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/0cc3d4ae4b3e06cdd7f24de2091de88f-r1UclR-original.webp",
+                            "variants": {
+                                "mobile": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/0cc3d4ae4b3e06cdd7f24de2091de88f-vGKVG8-mobile.webp",
+                                "retina": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/0cc3d4ae4b3e06cdd7f24de2091de88f-vGKVG8-retina.webp",
+                                "tablet": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/0cc3d4ae4b3e06cdd7f24de2091de88f-vGKVG8-tablet.webp",
+                                "desktop": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/0cc3d4ae4b3e06cdd7f24de2091de88f-vGKVG8-desktop.webp"
+                            }
+                        }
+                    ],
+                    "summary": {
+                        "en": "New Year's gifts! Only in December 2025, when you buy a new ski pass, it is automatically extended by 31 days until January 31, 2026. More fun for the whole family, have time to get a long ski pass and win a snowboard or ski set!",
+                        "fr": "New Year's gifts! Only in December 2025, when you buy a new ski pass, it is automatically extended by 31 days until January 31, 2026. More fun for the whole family, have time to get a long ski pass and win a snowboard or ski set!",
+                        "ru": "<p>🏔️ОТЕЛЬ&nbsp;НЕДЕЛИ:&nbsp;10&nbsp;000&nbsp;бонусов&nbsp;на&nbsp;услуги&nbsp;курорта&nbsp;при&nbsp;<strong>проживании</strong>&nbsp;с&nbsp;1&nbsp;по&nbsp;31&nbsp;августа&nbsp;2025&nbsp;года&nbsp;–&nbsp;успевайте&nbsp;забронировать&nbsp;по&nbsp;акции&nbsp;до&nbsp;7&nbsp;августа!!</p>"
+                    },
+                    "discount": {
+                        "kind": "rel",
+                        "value": 50,
+                        "boundary": "max"
+                    },
+                    "highlight": {
+                        "en": "Подарки от Роза Хутор!",
+                        "pt": "Master class",
+                        "ru": "10 000 бонусов на услуги курорта!"
+                    },
+                    "mainImage": {
+                        "raw": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/938e58aa06e325abc818f818561c7db6-r1UclR-original.webp",
+                        "variants": {
+                            "mobile": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/938e58aa06e325abc818f818561c7db6-vGKVG8-mobile.webp",
+                            "retina": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/938e58aa06e325abc818f818561c7db6-vGKVG8-retina.webp",
+                            "tablet": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/938e58aa06e325abc818f818561c7db6-vGKVG8-tablet.webp",
+                            "desktop": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/938e58aa06e325abc818f818561c7db6-vGKVG8-desktop.webp"
+                        }
+                    },
+                    "description": {
+                        "en": "Отель недели: Фристайл Роза Хутор",
+                        "ru": "Отель Фристайл Роза Хутор 3* прекрасно подходит как для одиночных гостей, так и для больших компаний. Отличные условия для доступного проживания с детьми, есть сауна.<br><br>Отель предлагает уютные номера с современными интерьерами и восхитительным видом на горы. Рядом находятся йога-центр, магазины и кафе, а также другие развлечения для детей и взрослых. Здесь здорово в любое время года.<br><br><img src=\"https://i.ibb.co/2029XRd5/IMG-6513-result-webp.jpg\" /><br><br>Номерной фонд гостиницы предоставляет своим гостям несколько вариантов комфортабельных номеров с современными интерьерами. Это могут быть однокомнатные номера для проживания 1–2 человек и номера повышенной комфортности категории <b>«Полулюкс»</b>.<br><br>Мы бесплатно размещаем детей до 12 лет в номерах с родителями без дополнительного места.<br><br>Для детей до 3 лет предусмотрена детская кроватка (по запросу при наличии в день заезда).<br><br><b>Номера</b><br><br>Во всех отелях сети действуют единые стандарты качества. Вам везде обеспечат хороший сервис и комфортные номера.<br><br>Отель Фристайл Роза Хутор 3* располагает номерами категории <b>«Супериор»</b> и <b>«Супериор с балконом»</b> с видом на горы, а также номерами категории <b>«Полулюкс»</b>.<br><br><b>«Супериор» и «Супериор с балконом»</b><br>Площадь – 22–25 кв. метра. В номере: широкая двуспальная кровать или две односпальные, балкон, гардероб, рабочая зона, система климат-контроля, спутниковое телевидение, сейф, мини-бар, кресло и журнальный столик, чайная станция (чай, кофе, сахар) и минеральная вода, швейный набор и набор для ухода за обувью, принадлежности для ванной, бесплатный Wi-Fi.<br><br><b>«Полулюкс»</b><br>Просторные номера площадью 35 кв. метров имеют выделенную гостиную зону. В номере: двуспальная кровать, балкон (не везде), кресло с журнальным столиком, кондиционер, спутниковое телевидение, сейф, а также набор для обуви, принадлежности для ванной, бесплатный Wi-Fi, чайная станция (чай, кофе, сахар) и минеральная вода.<br><br><b>Питание в отеле Фристайл Роза Хутор</b><br><br><b>Ресторан «Рукола»</b> – традиционная итальянская кухня! На вкусный и полезный завтрак в зимний сезон можно попасть уже с 7 часов утра, что очень удобно для ранних райдеров.<br><br><b>Лобби-бар</b> – уютное место для бесед за чашечкой кофе или оригинальным коктейлем. Вкусные и полезные расширенные завтраки.<br><br>Проживание с животными в отеле запрещено.<br><br><b>Условия участия в Роза Бонус</b><br><br><span style=\"color:blue;\">&#10022;</span> <b>Начисление:</b> кешбэк до 15% в зависимости от вашего статуса в программе Роза Бонус при покупке на сайте <a href=\"https://rosakhutor.ru\" target=\"_blank\">rosakhutor.ru</a><br><br><span style=\"color:blue;\">&#10022;</span> <b>Списание:</b> возможно осуществить списание до 15% при покупке на сайте <a href=\"https://rosakhutor.ru\" target=\"_blank\">rosakhutor.ru</a> или кассе парка<br><br><b>Адрес:</b><br>г. Сочи, пос. Эстоcадок, курорт Роза Хутор, Роза Долина 560 м, наб. Полянка, д. 4. Расстояние до подъемника Олимпия – 900 метров.<br><br><b>📞 Телефон:</b><br>+7 (862) 243-13-31<br><br><b>📞 Отдел бронирования:</b><br>8 (862) 243-13-33<br><br><b>✉️ e-mail:</b><br>Reservations_valset@rosakhutor.ru",
+                        "tr": "Описание бонусной программы ХЗ на каком языке"
+                    },
+                    "bonusProgram": true,
+                    "salesSchedule": [
+                        [
+                            "1986-10-11T04:08:01Z",
+                            "2025-09-28T13:56:00Z"
+                        ],
+                        [
+                            "2022-02-21T02:00:00Z",
+                            "2025-06-01T09:30:00Z"
+                        ],
+                        [
+                            "2025-04-01T20:45:00Z",
+                            "2025-09-30T13:56:00Z"
+                        ],
+                        [
+                            "2025-04-01T20:45:00Z",
+                            "2025-09-30T13:56:00Z"
+                        ]
+                    ],
+                    "usageSchedule": [
+                        [
+                            null,
+                            "1979-11-07T22:30:52.578Z"
+                        ],
+                        [
+                            "2022-02-21T02:00:00Z",
+                            "2025-06-01T09:30:00Z"
+                        ],
+                        [
+                            "2022-02-21T02:00:00Z",
+                            "2025-06-01T09:30:00Z"
+                        ],
+                        [
+                            null,
+                            "2026-03-08T11:00:00Z"
+                        ]
+                    ]
+                },
+                "uid": "c03d8e74-f709-4fdb-98c2-8d2d1cd090a0",
+                "created": "2025-08-22T13:03:20.000Z",
+                "updated": "2025-11-13T15:32:02.000Z",
+                "creator": "e782234e-4f69-3ea5-1ae9-622d450ae1ab",
+                "active": true,
+                "name": {
+                    "ar": "Promotion №1",
+                    "ru": "Отель Фристайл"
+                },
+                "system": false,
+                "slug": "4sn4waf9fp39",
+                "seo": {
+                    "title": {
+                        "en": "Hotel Freestyle_seo",
+                        "it": "Hotel Freestyles_seo",
+                        "ru": "Отель Фристайл_seo"
+                    },
+                    "description": {
+                        "el": "Hotel Freestyle_description_seo",
+                        "en": "Hotel Freestyle_description_seo",
+                        "ru": "Отель Фристайл_description_seo",
+                        "zh": "Hotel Freestyle_description_seo"
+                    }
+                },
+                "priority": 11,
+                "targets": [
+                    "mobile",
+                    "web"
+                ],
+                "labels": [
+                    "f0d035df-40e3-43d5-bef6-cb6b1d0e555d",
+                    "6b42d4ed-a02b-4940-942a-72af89a2de73"
+                ],
+                "tags": [
+                    "4b36d8f5-a5f5-41a0-87d1-1f0792ce8ce0",
+                    "80690b4a-06cd-4886-98b2-4621ecbfd63f",
+                    "e3215a82-8631-4f55-9820-16fb428895a1",
+                    "4571745c-72e5-4c5d-8fc6-1d9bf1b21434"
+                ],
+                "validity": [
+                    "2022-02-21T02:00:00Z",
+                    "2026-06-30T09:30:00Z"
+                ]
+            },
+            {
+                "content": {
+                    "price": null,
+                    "title": {
+                        "ru": "Горы Роза Хутор",
+                        "ta": "Увеличенный Ски-Пас"
+                    },
+                    "action": {
+                        "url": "https://rosakhutor.ru/",
+                        "kind": "nav:url",
+                        "text": {
+                            "en": "Enroll in courses",
+                            "ru": "Подробнее1",
+                            "ta": "Enroll in courses "
+                        },
+                        "target": "ext"
+                    },
+                    "gallery": [
+                        {
+                            "raw": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/8a5cd2bb03ea808d0b302b5b0f75535f-r1UclR-original.webp",
+                            "variants": {
+                                "mobile": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/8a5cd2bb03ea808d0b302b5b0f75535f-vGKVG8-mobile.webp",
+                                "retina": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/8a5cd2bb03ea808d0b302b5b0f75535f-vGKVG8-retina.webp",
+                                "tablet": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/8a5cd2bb03ea808d0b302b5b0f75535f-vGKVG8-tablet.webp",
+                                "desktop": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/8a5cd2bb03ea808d0b302b5b0f75535f-vGKVG8-desktop.webp"
+                            }
+                        },
+                        {
+                            "raw": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/07849174015b9794b6431d5c4f100411-r1UclR-original.webp",
+                            "variants": {
+                                "mobile": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/07849174015b9794b6431d5c4f100411-vGKVG8-mobile.webp",
+                                "retina": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/07849174015b9794b6431d5c4f100411-vGKVG8-retina.webp",
+                                "tablet": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/07849174015b9794b6431d5c4f100411-vGKVG8-tablet.webp",
+                                "desktop": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/07849174015b9794b6431d5c4f100411-vGKVG8-desktop.webp"
+                            }
+                        }
+                    ],
+                    "summary": {
+                        "en": "New Year's gifts! Only in December 2025, when you buy a new ski pass, it is automatically extended by 31 days until January 31, 2026. More fun for the whole family, have time to get a long ski pass and win a snowboard or ski set!",
+                        "fr": "New Year's gifts! Only in December 2025, when you buy a new ski pass, it is automatically extended by 31 days until January 31, 2026. More fun for the whole family, have time to get a long ski pass and win a snowboard or ski set!",
+                        "ru": ""
+                    },
+                    "discount": null,
+                    "highlight": {
+                        "en": "Подарки от Роза Хутор!",
+                        "pt": "Master class",
+                        "ru": "В горы с гидом"
+                    },
+                    "mainImage": {
+                        "raw": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/409e483437b4c335a79fd43129c10cec-r1UclR-original.webp",
+                        "variants": {
+                            "mobile": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/409e483437b4c335a79fd43129c10cec-vGKVG8-mobile.webp",
+                            "retina": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/409e483437b4c335a79fd43129c10cec-vGKVG8-retina.webp",
+                            "tablet": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/409e483437b4c335a79fd43129c10cec-vGKVG8-tablet.webp",
+                            "desktop": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/409e483437b4c335a79fd43129c10cec-vGKVG8-desktop.webp"
+                        }
+                    },
+                    "description": {
+                        "en": "Отель недели: Фристайл Роза Хутор",
+                        "ru": "Это уникальная возможность познакомиться с красотами горного курорта Роза Хутор, подняться на подъёмниках на высоту 2320 метров, насладиться живописными видами, посетить Природный парк водопадов Менделиха и узнать множество интересных подробностей о курорте, его природе и истории из уст профессионального гида.<br><br><b>Что включает билет?</b><br>— 1 подъем и 1 спуск на всех гондольных и кресельных канатных дорогах, открытых для гостей в день посещения курорта, включая доступ в Природный парк водопадов Менделиха (Тропа к водопаду Менделя). Работа парка зависит от погодных условий;<br>— Экскурсия «Закулисье горнолыжного курорта» с гидом Центра Активного Отдыха по маршруту: Роза Долина 560 м — Горная Олимпийская деревня 1100 м — Роза Пик 2320 м.<br><b>Экскурсии проводятся ежедневно в 10:30 и 13:30. Продолжительность: 2 часа.<br><br><img src=\"https://i.ibb.co/hnzJzNh/img-683711a3c6c02-936.jpg\"</b><br><br><b>Важно:</b> количество мест в группе ограничено. Обязательна предварительная запись на экскурсию по телефону: +7 (938) 888-02-14 (время работы: ежедневно с 9:00 до 18:00).<br><br><b>Взнос в Сочинский национальный парк за доступ на тропу к водопаду Золотой в Природном парке водопадов Менделиха</b> в размере 250 рублей не входит в стоимость билета и оплачивается отдельно 1 раз в день. Оплата осуществляется при входе в парк или онлайн на сайте npsochi.ru.<br><br><b>Все услуги, входящие в билет, должны быть использованы в один день.</b><br><br>Билет доступен только онлайн на сайте rosakhutor.ru до 13:00 и в кассах Центра Активного Отдыха.",
+                        "tr": "Описание бонусной программы ХЗ на каком языке"
+                    },
+                    "bonusProgram": true,
+                    "salesSchedule": [
+                        [
+                            "1986-10-11T04:08:01Z",
+                            "2025-08-06T13:36:00Z"
+                        ],
+                        [
+                            "2022-02-21T02:00:00Z",
+                            "2025-06-01T09:30:00Z"
+                        ],
+                        [
+                            "2025-04-01T20:45:00Z",
+                            "2025-08-23T13:36:00Z"
+                        ],
+                        [
+                            "2025-04-01T20:45:00Z",
+                            "2025-08-30T13:36:00Z"
+                        ]
+                    ],
+                    "usageSchedule": [
+                        [
+                            null,
+                            "1979-11-07T22:30:52.578Z"
+                        ],
+                        [
+                            "2022-02-21T02:00:00Z",
+                            "2025-06-01T09:30:00Z"
+                        ],
+                        [
+                            "2022-02-21T02:00:00Z",
+                            "2025-06-01T09:30:00Z"
+                        ],
+                        [
+                            null,
+                            "2026-03-08T11:00:00Z"
+                        ]
+                    ]
+                },
+                "uid": "7b748fbc-cd66-434d-b99d-e3a8530c9a82",
+                "created": "2025-08-11T12:44:26.000Z",
+                "updated": "2025-11-17T21:02:35.000Z",
+                "creator": "e782234e-4f69-3ea5-1ae9-622d450ae1ab",
+                "active": true,
+                "name": {
+                    "ar": "Promotion №1",
+                    "ru": "Выгода при покупке пакета до 40%"
+                },
+                "system": false,
+                "slug": "mock-powerless-secrecy-6944sx1947",
+                "seo": {
+                    "title": {
+                        "en": "Benefit when purchasing a package up to 40%_seo",
+                        "it": "Benefit when purchasing a package up to 40%_seo",
+                        "ru": "Выгода при покупке пакета до 40"
+                    },
+                    "description": {
+                        "el": "Benefit when purchasing a package up to 40%_description_seo",
+                        "en": "Benefit when purchasing a package up to 40%_description_seo",
+                        "ru": "Выгода при покупке пакета до 40",
+                        "zh": "Benefit when purchasing a package up to 40%_description_seo"
+                    }
+                },
+                "priority": 9,
+                "targets": [
+                    "mobile"
+                ],
+                "labels": [
+                    "13f48186-8bde-400e-a482-cc0e9014dd05"
+                ],
+                "tags": [
+                    "e3215a82-8631-4f55-9820-16fb428895a1"
+                ],
+                "validity": [
+                    "2025-02-21T02:00:00Z",
+                    "2026-06-01T09:30:00Z"
+                ]
+            },
+            {
+                "content": {
+                    "price": null,
+                    "title": {
+                        "ru": "Комбо"
+                    },
+                    "action": {
+                        "url": "https://rosakhutor.ru/tickets/?adults=1&kids=1&tariff_id=[31826,31795,31828,31827]",
+                        "kind": "nav:url",
+                        "text": {
+                            "ru": "Купить билет"
+                        },
+                        "target": "ext"
+                    },
+                    "gallery": [
+                        {
+                            "raw": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/397b3041f807e73c110012d4d0fd070c-r1UclR-original.webp",
+                            "variants": {
+                                "mobile": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/397b3041f807e73c110012d4d0fd070c-vGKVG8-mobile.webp",
+                                "retina": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/397b3041f807e73c110012d4d0fd070c-vGKVG8-retina.webp",
+                                "tablet": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/397b3041f807e73c110012d4d0fd070c-vGKVG8-tablet.webp",
+                                "desktop": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/397b3041f807e73c110012d4d0fd070c-vGKVG8-desktop.webp"
+                            }
+                        }
+                    ],
+                    "summary": {
+                        "ru": "<p>&lt;span&nbsp;style=&quot;font-size:&nbsp;14pt;&quot;&gt;Комбо-тариф&nbsp;5в1&nbsp;с&nbsp;канатными&nbsp;дорогами,&nbsp;развлечениями&nbsp;и&nbsp;обедом&nbsp;для&nbsp;идеального&nbsp;дня&nbsp;в&nbsp;горах.&nbsp;Ваша&nbsp;выгода&nbsp;при&nbsp;покупке&nbsp;пакета&nbsp;24%!&lt;/span&gt;</p>"
+                    },
+                    "discount": {
+                        "kind": null,
+                        "value": 24,
+                        "boundary": "max"
+                    },
+                    "highlight": {
+                        "ru": "Комбо-тариф 5в1 с канатными дорогами, развлечениями и обедом для идеального дня в горах. Ваша выгода при покупке пакета 24%!"
+                    },
+                    "mainImage": {
+                        "raw": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/e9ffc3738b1e9fc07549868c30c1f391-r1UclR-original.webp",
+                        "variants": {
+                            "mobile": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/e9ffc3738b1e9fc07549868c30c1f391-vGKVG8-mobile.webp",
+                            "retina": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/e9ffc3738b1e9fc07549868c30c1f391-vGKVG8-retina.webp",
+                            "tablet": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/e9ffc3738b1e9fc07549868c30c1f391-vGKVG8-tablet.webp",
+                            "desktop": "https://9ba6f7d6-f253-4374-9a56-7f9b1cb2f7d0.selstorage.ru/cms.content/common-image/e9ffc3738b1e9fc07549868c30c1f391-vGKVG8-desktop.webp"
+                        }
+                    },
+                    "description": {
+                        "ru": "<p>&lt;strong&gt;Прогулочный&nbsp;билет&nbsp;«День&nbsp;на&nbsp;Роза&nbsp;Хутор»:&lt;/strong&gt;&lt;br&gt;</p><p>&lt;ul&gt;</p><p>&lt;li&gt;Взрослый&nbsp;или&nbsp;ребёнок&nbsp;с&nbsp;15&nbsp;лет&nbsp;–&nbsp;3&nbsp;050&nbsp;₽&lt;/li&gt;</p><p>&lt;li&gt;Детский&nbsp;7-14&nbsp;лет&amp;nbsp;–&nbsp;2&nbsp;050₽&lt;/li&gt;</p><p>&lt;/ul&gt;</p><p>&nbsp;&lt;br&gt;</p><p>&nbsp;&lt;b&gt;Что&nbsp;включает&nbsp;билет:&lt;/b&gt;&nbsp;&lt;br&gt;</p><p>&nbsp;·&nbsp;1&nbsp;подъем&nbsp;и&nbsp;1&nbsp;спуск&nbsp;на&nbsp;всех&nbsp;гондольных&nbsp;и&nbsp;кресельных&nbsp;канатных&nbsp;дорогах,&nbsp;открытых&nbsp;для&nbsp;гостей&nbsp;в&nbsp;день&nbsp;посещения&nbsp;курорта,&nbsp;включая&nbsp;доступ&nbsp;в&nbsp;Природный&nbsp;парк&nbsp;водопадов&nbsp;Менделиха&nbsp;(работа&nbsp;парка&nbsp;зависит&nbsp;от&nbsp;погодных&nbsp;условий);&lt;br&gt;</p><p>&nbsp;·&nbsp;Комплексный&nbsp;обед&nbsp;с&nbsp;видом&nbsp;на&nbsp;горы&nbsp;в&nbsp;кафе&nbsp;«Берлога»&nbsp;в&nbsp;Горной&nbsp;Олимпийской&nbsp;деревне&nbsp;(1100&nbsp;м);&lt;br&gt;</p><p>&nbsp;·&nbsp;Прокат&nbsp;прогулочного&nbsp;велосипеда&nbsp;на&nbsp;1&nbsp;час&nbsp;в&nbsp;здании&nbsp;Мзымта&nbsp;двор&nbsp;(для&nbsp;оформления&nbsp;прокатного&nbsp;договора&nbsp;необходим&nbsp;паспорт);&lt;br&gt;</p><p>&nbsp;·&nbsp;Посещение&nbsp;интерактивного&nbsp;Музея&nbsp;Археологии;&lt;br&gt;</p><p>&nbsp;·&nbsp;Посещение&nbsp;этнопарка&nbsp;«Моя&nbsp;Россия».&lt;br&gt;</p><p>&nbsp;&lt;br&gt;</p><p>&nbsp;&lt;strong&gt;Все&nbsp;услуги,&nbsp;входящие&nbsp;в&nbsp;билет,&nbsp;должны&nbsp;быть&nbsp;использованы&nbsp;в&nbsp;один&nbsp;день.&nbsp;&lt;/strong&gt;&nbsp;&lt;br&gt;</p><p>&nbsp;&lt;br&gt;</p><p>&nbsp;&lt;a&nbsp;href=&quot;https://rosakhutor.ru/tickets/?adults=1&amp;kids=1&amp;tariff_id=[31826,31795,31828,31827]&quot;&nbsp;target=&quot;_blank&quot;&nbsp;class=&quot;button&nbsp;_blue&quot;&gt;Купить&nbsp;билет&lt;/a&gt;&amp;nbsp;&nbsp;&lt;br&gt;</p><p>&nbsp;&lt;br&gt;</p>"
+                    },
+                    "bonusProgram": true,
+                    "salesSchedule": [
+                        [
+                            "2025-11-30T14:20:00Z",
+                            "2026-02-28T14:20:00Z"
+                        ],
+                        [
+                            "2025-10-30T14:21:00Z",
+                            "2025-11-20T14:21:00Z"
+                        ]
+                    ],
+                    "usageSchedule": [
+                        [
+                            "2026-03-01T14:21:00Z",
+                            "2026-03-31T14:21:00Z"
+                        ]
+                    ]
+                },
+                "uid": "6ac9d30d-fc45-4b51-ad3d-6bc07ae2d046",
+                "created": "2025-10-30T17:23:38.000Z",
+                "updated": "2025-11-17T20:33:03.000Z",
+                "creator": "2276788c-2f87-4fd1-b678-8c2f87afd1a9",
+                "active": true,
+                "name": {
+                    "ru": "Комбо-билет «День на Роза Хутор»"
+                },
+                "system": false,
+                "slug": "den-na-roza-khutor",
+                "seo": {
+                    "title": {
+                        "ru": "Комбо-билет с обедом «День на Роза Хутор»"
+                    },
+                    "description": {
+                        "ru": "Комбо-билет с обедом «День на Роза Хутор»"
+                    }
+                },
+                "priority": 12,
+                "targets": [
+                    "mobile"
+                ],
+                "labels": [
+                    "f0d035df-40e3-43d5-bef6-cb6b1d0e555d"
+                ],
+                "tags": [
+                    "4b36d8f5-a5f5-41a0-87d1-1f0792ce8ce0",
+                    "80690b4a-06cd-4886-98b2-4621ecbfd63f"
+                ],
+                "validity": [
+                    "2025-10-30T14:09:00Z",
+                    "2025-12-31T14:09:00Z"
+                ]
+            },
+            {
+                "content": {
+                    "price": {
+                        "value": 1500.0278267632,
+                        "boundary": "exact"
+                    },
+                    "title": {
+                        "ru": "Сувениры Роза Хутор",
+                        "ta": "Увеличенный Ски-Пас"
+                    },
+                    "action": {
+                        "href": "tg:user10341",
+                        "kind": "basic-externals",
+                        "text": {
+                            "ru": "test"
+                        }
+                    },
+                    "gallery": [
+                        {
+                            "raw": "https://i.ibb.co/QFpLTb19/DSC02795-HDR-result-o.png",
+                            "variants": {
+                                "mobile": "https://i.ibb.co/fzcHcD9t/DSC02795-HDR-result-m.jpg",
+                                "retina": "https://i.ibb.co/XxWg6Nwv/DSC02795-HDR-result-r.jpg",
+                                "tablet": "https://i.ibb.co/ksF1nrF9/DSC02795-HDR-result-t.jpg",
+                                "desktop": "https://i.ibb.co/xqvgwQFk/DSC02795-HDR-result-d.jpg"
+                            }
+                        },
+                        {
+                            "raw": "https://i.ibb.co/BK5ZCHPR/57f4eca679d9e0-47208564-o.jpg",
+                            "variants": {
+                                "mobile": "https://i.ibb.co/prhjpg7n/57f4eca679d9e0-47208564-m.jpg",
+                                "retina": "https://i.ibb.co/JwHcFmD5/57f4eca679d9e0-47208564-r.jpg",
+                                "tablet": "https://i.ibb.co/KzpzyN8w/57f4eca679d9e0-47208564-t.jpg",
+                                "desktop": "https://i.ibb.co/M4NtzcG/57f4eca679d9e0-47208564-d.jpg"
+                            }
+                        }
+                    ],
+                    "summary": {
+                        "en": "<b>Promotion purchase period</b><br><br>29.04.2025 — 30.11.2025<br><br><b>Time left to purchase</b><br><br>114 days 9 hours<br><br><b>Usage period</b><br><br>29.04.2025 — 30.11.2025",
+                        "fr": "<b>Période d'achat de la promotion</b><br><br>29.04.2025 — 30.11.2025<br><br><b>Temps restant pour acheter</b><br><br>114 jours 9 heures<br><br><b>Période d'utilisation</b><br><br>29.04.2025 — 30.11.2025",
+                        "ru": "<b>Период покупки по акции</b><br><br>29.04.2025 — 30.11.2025<br><br><b>До конца покупки</b><br><br>114 дней 9 часов<br><br><b>Период использования</b><br><br>29.04.2025 — 30.11.2025"
+                    },
+                    "discount": {
+                        "kind": null,
+                        "value": 1984.90543581845,
+                        "boundary": "min"
+                    },
+                    "highlight": {
+                        "en": "Exchange your walking ticket for a souvenir postcard at the resort’s official store",
+                        "pt": "Troque o seu bilhete de passeio por um cartão-postal comemorativo na loja oficial do resort",
+                        "ru": "Обменяйте свой прогулочный билет на памятную открытку в фирменном магазине курорта"
+                    },
+                    "mainImage": {
+                        "raw": "https://i.ibb.co/2029XRd5/IMG-6513-result-webp.jpg",
+                        "variants": {
+                            "mobile": "https://i.ibb.co/2029XRd5/IMG-6513-result-webp.jpg",
+                            "retina": "https://i.ibb.co/2029XRd5/IMG-6513-result-webp.jpg",
+                            "tablet": "https://i.ibb.co/2029XRd5/IMG-6513-result-webp.jpg",
+                            "desktop": "https://i.ibb.co/2029XRd5/IMG-6513-result-webp.jpg"
+                        }
+                    },
+                    "description": {
+                        "en": "Now a walk around Rosa Khutor brings not only impressions, but also gifts!<br><br>In the official <b>Rosa Khutor</b> store under the <b>Romanov Bridge</b>, a special promotion is taking place — exchange your walking ticket for a postcard.<br><br>A postcard from <b>Rosa Khutor</b> will make a great souvenir and a reminder of your bright moments in the mountains. Simply present your ticket after the walk — and receive a colorful gift!<br><br><b>Addresses of all stores:</b><br>— Rosa Dolina (560 m), Mzymta Square, under the Romanov Bridge<br>— Mountain Olympic Village (1100 m), 37/1 Olimpiyskaya St., Rosa Priyut building<br>— Rosa Peak (2320 m), inside the “Height 2320” restaurant building<br><br>Don’t miss the chance to take a piece of Rosa Khutor with you and preserve the memories of your trip!<br><br>We wish you bright emotions and a wonderful holiday at <b>Rosa Khutor</b>!",
+                        "ru": "Теперь прогулка по Роза Хутор приносит не только впечатления, но и подарки!<br><br>В фирменном магазине <b>Роза Хутор</b> под <b>Романовым мостом</b> проходит специальная акция — обмен прогулочного билета на открытку.<br><br>Открытка от <b>Роза Хутор</b> станет отличным сувениром и напоминанием о ярких моментах в горах. Просто предъявите билет после прогулки — и получите яркий подарок!<br><br><b>Адреса всех магазинов:</b><br>— Роза Долина (560), площадь Мзымта, под Романовым мостом<br>— Горная Олимпийская деревня (1100), ул. Олимпийская, 37/1, здание Роза Приют<br>— Роза Пик 2320 м, здание ресторана «Высота 2320»<br><br>Не упустите возможность увезти с собой частичку Роза Хутор и сохранить воспоминания о путешествии!<br><br>Желаем вам ярких эмоций и хорошего отдыха на <b>Роза Хутор</b>!",
+                        "tr": "Artık Rosa Khutor’da bir yürüyüş size sadece güzel anılar değil, aynı zamanda hediyeler de kazandırıyor!<br><br><b>Rosa Khutor</b>’un <b>Romanov Köprüsü</b> altındaki resmi mağazasında özel bir kampanya devam ediyor — yürüyüş biletinizi bir kartpostalla değiştirin.<br><br><b>Rosa Khutor</b>’dan alacağınız kartpostal, dağlarda geçirdiğiniz parlak anların harika bir hatırası ve güzel bir hatırlatıcısı olacak. Yürüyüşten sonra biletinizi gösterin — ve rengarenk bir hediye kazanın!<br><br><b>Tüm mağazaların adresleri:</b><br>— Rosa Dolina (560 m), Mzymta Meydanı, Romanov Köprüsü altında<br>— Dağ Olimpiyat Köyü (1100 m), Olimpiyaskaya Cad. 37/1, Rosa Priyut binası<br>— Rosa Zirve 2320 m, “Vysota 2320” restoran binası<br><br>Rosa Khutor’dan bir parça yanınızda götürme ve seyahat hatıralarınızı saklama fırsatını kaçırmayın!<br><br><b>Rosa Khutor</b>’da sizlere parlak duygular ve keyifli bir tatil dileriz!"
+                    },
+                    "bonusProgram": true,
+                    "salesSchedule": [
+                        [
+                            "1986-10-11T04:08:01Z",
+                            null
+                        ],
+                        [
+                            "2022-02-21T02:00:00Z",
+                            "2025-06-01T09:30:00Z"
+                        ],
+                        [
+                            "2025-04-01T20:45:00Z",
+                            null
+                        ],
+                        [
+                            "2025-04-01T20:45:00Z",
+                            null
+                        ]
+                    ],
+                    "usageSchedule": [
+                        [
+                            null,
+                            "1979-11-07T22:30:52.578Z"
+                        ],
+                        [
+                            "2022-02-21T02:00:00Z",
+                            "2025-06-01T09:30:00Z"
+                        ],
+                        [
+                            "2022-02-21T02:00:00Z",
+                            "2025-06-01T09:30:00Z"
+                        ],
+                        [
+                            null,
+                            "2026-03-08T11:00:00Z"
+                        ]
+                    ]
+                },
+                "uid": "97db0bf6-e276-4270-8629-14f0da1cefe7",
+                "created": "2025-11-18T10:01:05.000Z",
+                "updated": null,
+                "creator": "e782234e-4f69-3ea5-1ae9-622d450ae1ab",
+                "active": true,
+                "name": {
+                    "ar": "Rosa souvenir",
+                    "ru": "Роза Сувенир"
+                },
+                "system": false,
+                "slug": "64g99xy234en",
+                "seo": {
+                    "title": {
+                        "en": "SEO title хз куда",
+                        "it": "SEO title хз куда",
+                        "ru": "SEO title хз куда"
+                    },
+                    "description": {
+                        "el": "SEO описание хз куда",
+                        "en": "SEO описание хз куда",
+                        "ru": "SEO описание хз куда",
+                        "zh": "SEO описание хз куда"
+                    }
+                },
+                "priority": 13,
+                "targets": null,
+                "labels": null,
+                "tags": null,
+                "validity": [
+                    "2022-02-21T02:00:00Z",
+                    "2026-06-01T09:30:00Z"
+                ]
+            }
+        ]
+    },
+    "message": "Data validation failed"
+}

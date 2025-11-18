@@ -1,0 +1,169 @@
+POST /api/mas/gw/main/cms/promotion:create HTTP/1.1
+Host: dev.stage.rosakhutor.ru
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwMTlhNzZkMC0wZWUyLTc0YTktOWNkYy1kYzFkOTFjMTExZGUiLCJjbHMiOiJ1Iiwic3ViIjoiMjI3Njc4OGMtMmY4Ny00ZmQxLWI2NzgtOGMyZjg3YWZkMWE5IiwicmV2IjozLCJhdHQiOiJHMSIsInBpZCI6InBsYWluIiwiYXV0aG9yaXR5IjoiZGV2LnN1bSIsImVudiI6ImRldmVsb3BtZW50IiwiZXhwIjo3Nzc2MDAwMDAwLjAsImlzcyI6Im9hczpyb3Nha2h1dG9yLW1hcy9kZXYiLCJpdGlkIjoiMDE5YTc2ZDAtMGVlMS03NjRmLWFkZWItNGVjOWRjYjQzNTFhIiwiaWF0IjoxNzYyOTI5OTM4fQ.RXEmgs6VSg3KSv8YYNRGw6312q0cvkSBHHMJvy-j3TM
+Content-Length: 8928
+
+{
+    "action": "create",
+    "args": 
+    [
+        {
+            "active": true, 
+            "content": 
+            {
+                "action": 
+                {
+                    "kind": "basic-externals",
+                    "text": 
+                    {
+                        "ru": "test" 
+                    },
+                    "href": "tg:user10341"
+                },
+                "bonusProgram": true, 
+                "description": 
+                {
+                    "ru":"Теперь прогулка по Роза Хутор приносит не только впечатления, но и подарки!<br><br>В фирменном магазине <b>Роза Хутор</b> под <b>Романовым мостом</b> проходит специальная акция — обмен прогулочного билета на открытку.<br><br>Открытка от <b>Роза Хутор</b> станет отличным сувениром и напоминанием о ярких моментах в горах. Просто предъявите билет после прогулки — и получите яркий подарок!<br><br><b>Адреса всех магазинов:</b><br>— Роза Долина (560), площадь Мзымта, под Романовым мостом<br>— Горная Олимпийская деревня (1100), ул. Олимпийская, 37/1, здание Роза Приют<br>— Роза Пик 2320 м, здание ресторана «Высота 2320»<br><br>Не упустите возможность увезти с собой частичку Роза Хутор и сохранить воспоминания о путешествии!<br><br>Желаем вам ярких эмоций и хорошего отдыха на <b>Роза Хутор</b>!",
+                    "en": "Now a walk around Rosa Khutor brings not only impressions, but also gifts!<br><br>In the official <b>Rosa Khutor</b> store under the <b>Romanov Bridge</b>, a special promotion is taking place — exchange your walking ticket for a postcard.<br><br>A postcard from <b>Rosa Khutor</b> will make a great souvenir and a reminder of your bright moments in the mountains. Simply present your ticket after the walk — and receive a colorful gift!<br><br><b>Addresses of all stores:</b><br>— Rosa Dolina (560 m), Mzymta Square, under the Romanov Bridge<br>— Mountain Olympic Village (1100 m), 37/1 Olimpiyskaya St., Rosa Priyut building<br>— Rosa Peak (2320 m), inside the “Height 2320” restaurant building<br><br>Don’t miss the chance to take a piece of Rosa Khutor with you and preserve the memories of your trip!<br><br>We wish you bright emotions and a wonderful holiday at <b>Rosa Khutor</b>!",
+                    "tr": "Artık Rosa Khutor’da bir yürüyüş size sadece güzel anılar değil, aynı zamanda hediyeler de kazandırıyor!<br><br><b>Rosa Khutor</b>’un <b>Romanov Köprüsü</b> altındaki resmi mağazasında özel bir kampanya devam ediyor — yürüyüş biletinizi bir kartpostalla değiştirin.<br><br><b>Rosa Khutor</b>’dan alacağınız kartpostal, dağlarda geçirdiğiniz parlak anların harika bir hatırası ve güzel bir hatırlatıcısı olacak. Yürüyüşten sonra biletinizi gösterin — ve rengarenk bir hediye kazanın!<br><br><b>Tüm mağazaların adresleri:</b><br>— Rosa Dolina (560 m), Mzymta Meydanı, Romanov Köprüsü altında<br>— Dağ Olimpiyat Köyü (1100 m), Olimpiyaskaya Cad. 37/1, Rosa Priyut binası<br>— Rosa Zirve 2320 m, “Vysota 2320” restoran binası<br><br>Rosa Khutor’dan bir parça yanınızda götürme ve seyahat hatıralarınızı saklama fırsatını kaçırmayın!<br><br><b>Rosa Khutor</b>’da sizlere parlak duygular ve keyifli bir tatil dileriz!" 
+                },
+                "discount": 
+                {
+                    "boundary": "min", 
+                    
+                    "value": 1984.90543581845 
+                },
+                "gallery": 
+                [ 
+                    {
+                        "raw": "https://i.ibb.co/QFpLTb19/DSC02795-HDR-result-o.png", 
+                        "variants": 
+                        {
+                            "desktop":"https://i.ibb.co/xqvgwQFk/DSC02795-HDR-result-d.jpg", 
+                            "mobile": "https://i.ibb.co/fzcHcD9t/DSC02795-HDR-result-m.jpg", 
+                            "retina": "https://i.ibb.co/XxWg6Nwv/DSC02795-HDR-result-r.jpg", 
+                            "tablet": "https://i.ibb.co/ksF1nrF9/DSC02795-HDR-result-t.jpg" 
+                        }
+                    },
+                    {
+                        "raw": "https://i.ibb.co/BK5ZCHPR/57f4eca679d9e0-47208564-o.jpg", 
+                        "variants": 
+                        {
+                            "desktop":"https://i.ibb.co/M4NtzcG/57f4eca679d9e0-47208564-d.jpg", 
+                            "mobile": "https://i.ibb.co/prhjpg7n/57f4eca679d9e0-47208564-m.jpg", 
+                            "retina": "https://i.ibb.co/JwHcFmD5/57f4eca679d9e0-47208564-r.jpg", 
+                            "tablet": "https://i.ibb.co/KzpzyN8w/57f4eca679d9e0-47208564-t.jpg" 
+                        }
+                    }
+                ],
+                "highlight": 
+                {
+                    "ru": "Обменяйте свой прогулочный билет на памятную открытку в фирменном магазине курорта",
+                    "en": "Exchange your walking ticket for a souvenir postcard at the resort’s official store",
+                    "pt": "Troque o seu bilhete de passeio por um cartão-postal comemorativo na loja oficial do resort" 
+                },
+                "mainImage": 
+                {
+                    "raw": "https://i.ibb.co/2029XRd5/IMG-6513-result-webp.jpg", 
+                    "variants": 
+                    {
+                        "desktop": "https://i.ibb.co/2029XRd5/IMG-6513-result-webp.jpg", 
+                        "tablet": "https://i.ibb.co/2029XRd5/IMG-6513-result-webp.jpg", 
+                        "mobile": "https://i.ibb.co/2029XRd5/IMG-6513-result-webp.jpg", 
+                        "retina": "https://i.ibb.co/2029XRd5/IMG-6513-result-webp.jpg" 
+                    }
+                },
+                "price": 
+                {
+                    "boundary": "exact", 
+                    
+                    "value": 1500.0278267632 
+                },
+                "salesSchedule": 
+                [
+                    [
+                        "1986-10-11T04:08:01Z",
+                        null
+                    ],
+                    [
+                        "2022-02-21T02:00:00Z",
+                        "2025-06-01T09:30:00Z"
+                    ],
+                    [
+                        "2025-04-01T20:45:00Z",
+                        null
+                    ],
+                    [
+                        "2025-04-01T20:45:00Z",
+                        null
+                    ]
+                ],
+                "summary": 
+                {
+                    "ru": "<b>Период покупки по акции</b><br><br>29.04.2025 — 30.11.2025<br><br><b>До конца покупки</b><br><br>114 дней 9 часов<br><br><b>Период использования</b><br><br>29.04.2025 — 30.11.2025",
+                    "en": "<b>Promotion purchase period</b><br><br>29.04.2025 — 30.11.2025<br><br><b>Time left to purchase</b><br><br>114 days 9 hours<br><br><b>Usage period</b><br><br>29.04.2025 — 30.11.2025",
+                    "fr": "<b>Période d'achat de la promotion</b><br><br>29.04.2025 — 30.11.2025<br><br><b>Temps restant pour acheter</b><br><br>114 jours 9 heures<br><br><b>Période d'utilisation</b><br><br>29.04.2025 — 30.11.2025"
+                },
+                "title": 
+                {
+                    "ru": "Сувениры Роза Хутор",
+                    "ta": "Увеличенный Ски-Пас" 
+                },
+                "usageSchedule": 
+                [
+                    [
+                        null,
+                        "1979-11-07T22:30:52.578Z"
+                    ],
+                    [
+                        "2022-02-21T02:00:00Z",
+                        "2025-06-01T09:30:00Z"
+                    ],
+                    [
+                        "2022-02-21T02:00:00Z",
+                        "2025-06-01T09:30:00Z"
+                    ],
+                    [
+                        null,
+                        "2026-03-08T11:00:00Z"
+                    ]
+                ]
+            },
+            "creator": "e782234e-4f69-3ea5-1ae9-622d450ae1ab", 
+            "labels": null, 
+            "name": 
+            {
+                "ru": "Роза Сувенир",
+                "ar": "Rosa souvenir"
+            },
+            "seo": 
+            {
+                "description": 
+                {
+                    "en": "SEO описание хз куда",
+                    "ru": "SEO описание хз куда",
+                    "zh": "SEO описание хз куда",
+                    "el": "SEO описание хз куда"
+                },
+                "title": 
+                {
+                    "ru": "SEO title хз куда",
+                    "en": "SEO title хз куда",
+                    "it": "SEO title хз куда"
+                }
+            },
+            "slug": "64g99xy234en", 
+            "system": false,
+            "tags": null, 
+            "targets": null, 
+            "uid": "97db0bf6-e276-4270-8629-14f0da1cefe7", 
+            "validity": 
+            [ 
+            "2022-02-21T02:00:00Z",
+            "2026-06-01T09:30:00Z"
+            ]
+        }
+    ]
+}
